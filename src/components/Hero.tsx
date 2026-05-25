@@ -12,10 +12,10 @@ export default function Hero() {
     >
       {/* Warm ambient background shapes */}
       <div className="absolute inset-0 z-0">
-        {/* Warm coral glow */}
-        <div className="absolute top-1/3 left-1/5 -translate-x-1/2 -translate-y-1/2 w-72 h-72 md:w-96 md:h-96 rounded-full bg-[#c2603e]/8 dark:bg-[#d4845a]/6 blur-[80px] md:blur-[120px] animate-pulse" style={{ animationDuration: "9s" }} />
-        {/* Warm peach glow */}
-        <div className="absolute bottom-1/4 right-1/5 translate-x-1/2 translate-y-1/2 w-80 h-80 md:w-[420px] md:h-[420px] rounded-full bg-[#e8a87c]/8 dark:bg-[#e8a87c]/4 blur-[90px] md:blur-[130px] animate-pulse" style={{ animationDuration: "13s" }} />
+        {/* Warm orange glow 1 */}
+        <div className="absolute top-1/3 left-1/5 -translate-x-1/2 -translate-y-1/2 w-72 h-72 md:w-96 md:h-96 rounded-full bg-accent/8 dark:bg-accent/5 blur-[80px] md:blur-[120px] animate-pulse" style={{ animationDuration: "9s" }} />
+        {/* Warm orange glow 2 */}
+        <div className="absolute bottom-1/4 right-1/5 translate-x-1/2 translate-y-1/2 w-80 h-80 md:w-[420px] md:h-[420px] rounded-full bg-accent/10 dark:bg-accent/4 blur-[90px] md:blur-[130px] animate-pulse" style={{ animationDuration: "13s" }} />
         
         {/* Subtle dot pattern instead of grid */}
         <div className="absolute inset-0 bg-[radial-gradient(circle,var(--border-primary)_1px,transparent_1px)] bg-[size:3rem_3rem] [mask-image:radial-gradient(ellipse_55%_50%_at_50%_50%,#000_60%,transparent_100%)] opacity-25 dark:opacity-15" />

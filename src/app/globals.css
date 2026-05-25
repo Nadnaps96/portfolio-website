@@ -3,32 +3,32 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  /* Warm, creamy light palette */
-  --bg-primary: #faf8f5;
-  --bg-secondary: #f2eeea;
+  /* SVS Food Light Palette */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9f9f9;
   --bg-card: #ffffff;
-  --text-primary: #2d2a26;
-  --text-secondary: #6b6560;
-  --accent: #c2603e;
-  --accent-hover: #a84e30;
-  --accent-light: #fdf0eb;
-  --border-primary: #e5ddd5;
+  --text-primary: #1a1a1a;
+  --text-secondary: #333333;
+  --accent: #f16a34;
+  --accent-hover: #e55a24;
+  --accent-light: #ffe8db;
+  --border-primary: #e0e0e0;
 
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
 .dark {
-  /* Muted warm dark palette */
-  --bg-primary: #1a1714;
-  --bg-secondary: #23201c;
-  --bg-card: #2c2824;
-  --text-primary: #ede8e3;
-  --text-secondary: #a39a90;
-  --accent: #d4845a;
-  --accent-hover: #e09a72;
-  --accent-light: #2e221a;
-  --border-primary: #3d3731;
+  /* SVS Food Dark Palette (Inverted/Muted version for dark mode compatibility) */
+  --bg-primary: #121212;
+  --bg-secondary: #1a1a1a;
+  --bg-card: #1e1e1e;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --accent: #f16a34;
+  --accent-hover: #ff8554;
+  --accent-light: #3a1e12;
+  --border-primary: #2a2a2a;
 }
 
 @theme {

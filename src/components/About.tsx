@@ -59,42 +59,42 @@ export default function About() {
 
         {/* Right Side: Interactive Developer Terminal Mockup */}
         <div className="lg:col-span-5 w-full">
-          <div className="w-full rounded-xl overflow-hidden shadow-lg border border-border-primary bg-[#2a2520] dark:bg-[#1e1b17] text-[#c8bfb4] font-mono text-sm leading-normal">
+          <div className="w-full rounded-xl overflow-hidden shadow-lg border border-border-primary bg-[#1a1a19] dark:bg-[#141413] text-[#e0e0de] font-mono text-sm leading-normal">
             {/* Terminal Header */}
-            <div className="bg-[#322d27] dark:bg-[#262220] px-4 py-3 flex items-center justify-between border-b border-[#3d372f]">
+            <div className="bg-[#242422] dark:bg-[#1c1c1b] px-4 py-3 flex items-center justify-between border-b border-[#2e2e2c]">
               <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 rounded-full bg-[#c2603e]/80" />
-                <div className="w-3 h-3 rounded-full bg-[#d4a55a]/80" />
-                <div className="w-3 h-3 rounded-full bg-[#7a9a6a]/80" />
+                <div className="w-3 h-3 rounded-full bg-accent/80" />
+                <div className="w-3 h-3 rounded-full bg-[#f1ba34]/80" />
+                <div className="w-3 h-3 rounded-full bg-[#5cb85c]/80" />
               </div>
-              <span className="text-xs text-[#8a8078] select-none">spandan@terminal: ~</span>
+              <span className="text-xs text-[#80807c] select-none">spandan@terminal: ~</span>
               <div className="w-12" /> {/* spacer to balance */}
             </div>
 
             {/* Terminal Content */}
             <div className="p-5 space-y-4">
               <div>
-                <p className="text-[#d4845a]">&lt;SG /&gt; ~ <span className="text-[#8ba872]">cat info.json</span></p>
+                <p className="text-accent">&lt;SG /&gt; ~ <span className="text-[#a0a09a]">cat info.json</span></p>
                 <div className="pl-4 mt-1 space-y-1">
-                  <p className="text-[#d4a55a]">&#123;</p>
-                  <p className="pl-4"><span className="text-[#c2603e]">&quot;name&quot;</span>: <span className="text-[#8ba872]">&quot;Spandan Ghosh&quot;</span>,</p>
-                  <p className="pl-4"><span className="text-[#c2603e]">&quot;specialty&quot;</span>: <span className="text-[#8ba872]">&quot;Full-Stack &amp; DevOps&quot;</span>,</p>
-                  <p className="pl-4"><span className="text-[#c2603e]">&quot;interests&quot;</span>: <span className="text-[#b89a6a]">[&quot;API Architecture&quot;, &quot;Dockerization&quot;, &quot;Cloud Infrastructure&quot;]</span></p>
-                  <p className="text-[#d4a55a]">&#125;</p>
+                  <p className="text-[#a0a09a]">&#123;</p>
+                  <p className="pl-4"><span className="text-accent">&quot;name&quot;</span>: <span className="text-[#e0e0de]">&quot;Spandan Ghosh&quot;</span>,</p>
+                  <p className="pl-4"><span className="text-accent">&quot;specialty&quot;</span>: <span className="text-[#e0e0de]">&quot;Full-Stack &amp; DevOps&quot;</span>,</p>
+                  <p className="pl-4"><span className="text-accent">&quot;interests&quot;</span>: <span className="text-[#a0a09a]">[&quot;API Architecture&quot;, &quot;Dockerization&quot;, &quot;Cloud Infrastructure&quot;]</span></p>
+                  <p className="text-[#a0a09a]">&#125;</p>
                 </div>
               </div>
 
               <div>
-                <p className="text-[#d4845a]">&lt;SG /&gt; ~ <span className="text-[#8ba872]">cat experiences.csv</span></p>
+                <p className="text-accent">&lt;SG /&gt; ~ <span className="text-[#a0a09a]">cat experiences.csv</span></p>
                 <div className="mt-1 pl-4 space-y-1 select-all">
-                  <p className="text-xs text-[#6b625a]">role,company,duration</p>
-                  <p className="text-[#c8bfb4]">Backend-SDE,UNSW,2025-Present</p>
-                  <p className="text-[#c8bfb4]">Marketing-Strategies,BetterMind Labs,2024-2024</p>
+                  <p className="text-xs text-[#6e6e6c]">role,company,duration</p>
+                  <p className="text-[#e0e0de]">Backend-SDE,UNSW,2025-Present</p>
+                  <p className="text-[#e0e0de]">Marketing-Strategies,BetterMind Labs,2024-2024</p>
                 </div>
               </div>
 
               <div className="pt-2">
-                <p className="text-[#d4845a]">&lt;SG /&gt; ~ <span className="text-[#8a8078] select-none animate-pulse">█</span></p>
+                <p className="text-accent">&lt;SG /&gt; ~ <span className="text-accent/60 select-none animate-pulse">█</span></p>
               </div>
             </div>
           </div>

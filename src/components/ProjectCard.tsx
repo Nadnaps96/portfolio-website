@@ -2,26 +2,7 @@ import { Project } from "@/types";
 import { Github } from "@/components/BrandIcons";
 import { ExternalLink, Folder, Calendar, CheckCircle2 } from "lucide-react";
 
-interface ProjectCardProps {
-  project: Project;
-}
-
-const getBadgeColor = (tech: string): string => {
-  const t = tech.toLowerCase();
-  if (t.includes("python")) return "bg-[#d4a55a]/10 text-[#b88a3a] dark:text-[#d4a55a] border-[#d4a55a]/20";
-  if (t.includes("docker")) return "bg-[#5a8a9a]/10 text-[#4a7a8a] dark:text-[#6a9aaa] border-[#5a8a9a]/20";
-  if (t.includes("aws") || t.includes("ec2") || t.includes("iam")) return "bg-[#c2603e]/10 text-[#c2603e] dark:text-[#d4845a] border-[#c2603e]/20";
-  if (t.includes("django")) return "bg-[#6a8a5a]/10 text-[#5a7a4a] dark:text-[#8ba872] border-[#6a8a5a]/20";
-  if (t.includes("flask")) return "bg-[#8a7a6a]/10 text-[#7a6a5a] dark:text-[#a09080] border-[#8a7a6a]/20";
-  if (t.includes("react") || t.includes("next")) return "bg-[#5a8a9a]/10 text-[#4a7a8a] dark:text-[#7aaabb] border-[#5a8a9a]/20";
-  if (t.includes("sqlite") || t.includes("sql") || t.includes("mysql")) return "bg-[#7a8aa0]/10 text-[#5a7090] dark:text-[#8a9ab0] border-[#7a8aa0]/20";
-  if (t.includes("javascript") || t.includes("jinja")) return "bg-[#d4a55a]/10 text-[#b88a3a] dark:text-[#d4a55a] border-[#d4a55a]/20";
-  if (t.includes("git")) return "bg-[#c2603e]/10 text-[#a84e30] dark:text-[#d4845a] border-[#c2603e]/20";
-  if (t.includes("algorithm") || t.includes("dao")) return "bg-[#8a7a9a]/10 text-[#6a5a7a] dark:text-[#a090b0] border-[#8a7a9a]/20";
-  return "bg-bg-secondary text-text-secondary border-border-primary/50";
-};
-
-export default function ProjectCard({ project }: ProjectCardProps) {
+export default function ProjectCard({ project }: { project: Project }) {
   return (
     <article className="flex flex-col h-full bg-bg-card rounded-xl border border-border-primary hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5 hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
       {/* Card Header */}
@@ -97,7 +78,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         {project.techStack.map((tech) => (
           <span
             key={tech}
-            className={`text-2xs font-mono px-2 py-0.5 rounded-md border font-medium ${getBadgeColor(tech)}`}
+            className="text-2xs font-mono px-2 py-0.5 rounded-md border border-accent/20 bg-accent-light text-accent font-medium"
           >
             {tech}
           </span>
